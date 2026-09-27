@@ -48,3 +48,16 @@ public class Banksystem {
 
         return balance;
     }
+    public void displayCustomerDetails(int interestRate) {
+
+        System.out.println("Customer Name: " + Customername);
+        System.out.println("Deposit Amount: " + customerdeposit);
+        System.out.println("Deposit Date: " + depositDate);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Email: " + email);
+        System.out.println("Interest Rate: " + interestRate + "%");
+
+        double customerinterest = calculateInterest(interestRate);
+
+        System.out.println("Calculated Interest: " + customerinterest);
+
