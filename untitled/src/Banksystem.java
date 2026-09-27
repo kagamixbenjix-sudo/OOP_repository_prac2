@@ -27,3 +27,9 @@ public class Banksystem {
 
         return customerinterest;
     }
+    public double getBalance(int interestRate) {
+
+        double interest = calculateInterest(interestRate);
+
+        return customerdeposit + interest;
+    }
