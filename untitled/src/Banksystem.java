@@ -17,3 +17,13 @@ public class Banksystem {
         this.email = email;
         this.depositDate = LocalDate.now();
     }
+    public double calculateInterest(int interestRate) {
+
+        // Implicit conversion: int deposit is automatically converted to double
+        double depositasdouble = customerdeposit;
+
+        double customerinterest =
+                (depositasdouble * interestRate) / 100.0;
+
+        return customerinterest;
+    }
