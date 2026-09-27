@@ -61,3 +61,14 @@ public class Banksystem {
 
         System.out.println("Calculated Interest: " + customerinterest);
 
+        // Explicit conversion: double to int
+        int roundedinterest = (int) customerinterest;
+
+        System.out.println(
+                "Interest after the explicit conversion: " + roundedinterest
+        );
+
+        System.out.println(
+                "Customer Balance: " + getBalance(interestRate)
+        );
+    }
