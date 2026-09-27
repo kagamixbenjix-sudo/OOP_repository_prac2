@@ -94,3 +94,23 @@ public class Banksystem {
                 "0700000003",
                 "alice.johnson@gmail.com"
         );
+        
+        // BK1
+        BK1.displayCustomerDetails(5);
+        double balance1 = BK1.withdraw(50, 5);
+        System.out.println("Balance after withdrawal: " + balance1);
+        System.out.println("----------------------------");
+
+        // BK2
+        BK2.displayCustomerDetails(10);
+        double balance2 = BK2.withdraw(50, 10);
+        System.out.println("Balance after withdrawal: " + balance2);
+        System.out.println("----------------------------");
+
+        // BK3
+        BK3.displayCustomerDetails(15);
+        double balance3 = BK3.withdraw(20, 15);
+        System.out.println("Balance after withdrawal: " + balance3);
+        System.out.println("----------------------------");
+    }
+}
