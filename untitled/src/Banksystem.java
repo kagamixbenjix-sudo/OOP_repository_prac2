@@ -17,6 +17,7 @@ public class Banksystem {
         this.email = email;
         this.depositDate = LocalDate.now();
     }
+
     public double calculateInterest(int interestRate) {
 
         // Implicit conversion: int deposit is automatically converted to double
@@ -27,16 +28,23 @@ public class Banksystem {
 
         return customerinterest;
     }
+
     public double getBalance(int interestRate) {
 
         double interest = calculateInterest(interestRate);
 
         return customerdeposit + interest;
     }
+
     public double withdraw(int amount, int interestRate) {
 
         double balance = getBalance(interestRate);
 
         if (amount <= balance) {
             balance -= amount;
-        } 
+        } else {
+            System.out.println("insufficient funds !");
+        }
+
+        return balance;
+    }
