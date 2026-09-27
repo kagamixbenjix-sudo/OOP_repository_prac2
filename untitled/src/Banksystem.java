@@ -72,3 +72,25 @@ public class Banksystem {
                 "Customer Balance: " + getBalance(interestRate)
         );
     }
+    public static void main(String[] args) {
+
+        Banksystem BK1 = new Banksystem(
+                "John Doe",
+                1050,
+                "0700000001",
+                "john.doe@gmail.com"
+        );
+
+        Banksystem BK2 = new Banksystem(
+                "Jane Smith",
+                2055,
+                "0700000002",
+                "jane.smith@gmail.com"
+        );
+
+        Banksystem BK3 = new Banksystem(
+                "Alice Johnson",
+                1555,
+                "0700000003",
+                "alice.johnson@gmail.com"
+        );
