@@ -33,3 +33,10 @@ public class Banksystem {
 
         return customerdeposit + interest;
     }
+    public double withdraw(int amount, int interestRate) {
+
+        double balance = getBalance(interestRate);
+
+        if (amount <= balance) {
+            balance -= amount;
+        } 
